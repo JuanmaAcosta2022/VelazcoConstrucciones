@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navegacion {
+  background-color: #000;
+  font-weight: 600;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Añadir un poco de espacio alrededor de la barra */
+}
+
+.logo {
+  max-width: 150px; /* Limitar el tamaño del logo */
+  height: auto; /* Mantener la proporción del logo */
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px; /* Ajustar el padding para que coincida con la barra */
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
+
+.titulo {
+  color: #D3A625;
+}
+
+/* Estilos formulario */
+.container__form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.container__form .label {
+  font-size: 1.1rem;
+  color: #333;
+  display: block;
+}
+
+.form {
+  width: 100%;
+}
+
+.container__form .input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.container__form .input:focus {
+  outline: none;
+  border-color: #D3A625;
+}
+
+.container__form .submit-button {
+  background-color: #D3A625;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container__form .submit-button:hover {
+  background-color: #9C7D0A;
+}
+
+.container__form .captcha-image {
+  margin-top: 1rem;
+  display: block;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.captcha-image {
+  margin-top: 10px;
+  display: block;
+}
+
+/* Cargar personaje */
+.seccion__cargar {
+  padding: 2rem;
+}
+
+/* VER PERSONAJES */
+.container__personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Añadir esto para espaciar las cajas */
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
+
+.caja_personajes {
+  background-color: #d3d3d3;
+  padding: 2rem;
+  margin: 1rem;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto; /* Asegura que el contenido se ajuste */
+  box-sizing: border-box;
+}
+
+.caja_personajes img {
+  width: 80%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
